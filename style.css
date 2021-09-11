@@ -1,0 +1,415 @@
+body,h1,h2,h3,h4,h5,h6,p,span,a{
+    font-family: Work Sans;
+}
+
+.navbar {
+	line-height: 40px;
+	position: fixed;
+	z-index: 99;
+	background: white;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+.nav_icon {
+	color: white !important;
+	background: #6278df !important;
+	display: inline-block;
+	padding: 3px 12px;
+	font-size: 25px;
+	border-radius: 10px;
+}
+.logo_details {
+	font-size: 25px;
+	font-weight: ;
+	color: black;
+	text-decoration: none;
+	font-weight: 600;
+}
+.nav-item a{
+    color: black !important;
+}
+.nav_btn{
+    color: #6278df;
+    font-weight: bold;
+    padding: 8px 20px;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+.nav_btn:hover {
+	color: #ffffff;
+	background-color: #6278df;
+	border-color: #6278df;
+	box-shadow: 3px 3px 27px -3px #6278df;
+}
+
+
+
+
+/* slider_section */
+
+
+.slider_section {
+	background-image: url(./New\ folder/mbr-10.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 180px 0;
+	position: relative;
+	z-index: 1;
+	top: 72px;
+}
+
+.slider_section::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .5);
+    z-index: -1;
+}
+
+.slider_section input[type="text"] {
+    width: 340px;
+    border: 1px solid #5ba533;
+    box-sizing: border-box;
+    border-radius: 6px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+    outline: none;
+}
+.slider_section input[type="text"]:focus {
+	box-shadow: 3px 3px 27px -3px #6278df;
+    outline: none;
+}
+
+.slider_section input[type="submit"] {
+	width: 200px;
+	background: #5ba533;
+	outline: none;
+	border: 1px solid transparent;
+	color: white;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 13px 20px !important;
+}
+
+
+
+
+/* course section */
+
+
+.course_item {
+	background: white;
+	margin-bottom: ;
+	margin-top: 73px;
+}
+.course_item h1 {
+	font-size: 50px;
+	font-weight: 600;
+}
+.course_item p {
+	font-size: 23px;
+	font-weight: 400;
+	color: #767676;
+}
+
+.health_img{}
+.health_img img{
+    max-width: 95%;
+}
+.health_section p {
+	font-size: 18px;
+}
+
+
+/* features section */
+
+.features_item{
+    height: 250px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+}
+
+.left_img_sec{
+    width: 40%;
+    overflow: hidden;
+}
+.left_img_sec img {
+	height: 100%;
+	width: auto;
+	max-width: inherit;
+	position: relative;
+	left: -110px;
+}
+
+
+.left_content_sec {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.left_content_sec p{
+    margin-left: 20px;
+}
+
+/* <!-- application section --> */
+
+
+
+
+.application_item{
+    width: 33.33%;
+
+}
+.application_img{
+    position: relative;
+}
+.application_img img{
+    max-width: 100%;
+}
+
+.application_img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(98, 120, 223, .5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+.application_img:hover::after{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* user section */
+
+.user_headign h1 {
+	font-size: 55px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+.user_headign p {
+	font-size: 22px;
+	font-weight: 400;
+	color: #767676 !important;
+	margin-bottom: 40px;
+}
+.user_list {
+	width: 40%;
+	margin-left: 10%;
+}
+
+.user_list ul{
+    list-style-type: none;
+}
+.user_list ul li {
+	line-height: 70px;
+	font-size: 20px;
+	font-weight: 500;
+	color: #767676;
+}
+.user_list ul li span {
+	color: #6278df;
+	font-size: 31px;
+	font-weight: 900;
+	margin-right: 10px;
+}
+.user_btn{
+    background-color: white !important;
+    color: #6278df;
+    font-weight: 600;
+    margin: auto;
+    display: block;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+.user_list:hover > ul > .user_btn{
+    background-color: #6278df !important;
+    color: white;
+}
+.user_list ul .user_btn:hover{
+    background-color: black !important;
+
+}
+
+
+
+
+/* .application_section */
+
+
+.blockquote_section span {
+	font-size: 70px;
+	color: rgba(0,0,0, .2);
+}
+.blockquote_section img{
+    width: 90px;
+}
+
+
+/* teams section */
+
+
+
+.team_heading {
+	margin-bottom: 120px;
+}
+.team_item img {
+	width: 130px;
+	border-radius: 50%;
+	position: absolute;
+	top: -70px;
+	left: 10px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.3);
+}
+.team_item{
+    position: relative;
+}
+.team_item h5{
+    margin-top: 35px;
+    font-weight: 600;
+}
+.team_btn{
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+.team_btn:hover{
+    background-color: black !important;
+    color: white;
+}
+
+
+/* contact_form */
+
+
+.contact_form {
+	box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+	border-radius: 25px;
+	padding: 30px;
+}
+
+.contact_form input{
+    padding: 20px;
+}
+.contact_btn {
+    display: block;
+    margin: auto;
+    border: 1px solid transparent;
+    padding: 14px 32px;
+    border-radius: 10px;
+    background-color:#6278df !important;
+    color: white !important;
+    transition: all .4s ;
+    -webkit-transition: all .4s ;
+    -moz-transition: all .4s ;
+    -ms-transition: all .4s ;
+    -o-transition: all .4s ;
+}
+.contact_btn:hover{
+    color:#6278df !important;
+    background-color: white !important;
+    border: 1px solid #6278df ;
+    box-shadow: 3px 3px 27px -3px #6278df;
+}
+
+
+.android_section{
+    
+}
+.android_section h1 {
+	margin: 40px 0;
+	width: 650px;
+	margin: auto;
+	font-size: 50px;
+	font-weight: 400;
+	margin-bottom: 40px;
+}
+.android_section p {
+	font-size: 30px;
+	color: #767676;
+	font-weight: 300;
+}
+.android_section button{}
+.android_section button span{}
+.android_section .apple_btn {
+    padding: 14px 20px;
+    color: #5ba533;
+    border: 1px solid #5ba533;
+    outline: none;
+    font-weight: 600;
+    margin-right: 20px;
+    transition: all .4s ;
+    -webkit-transition: all .4s ;
+    -moz-transition: all .4s ;
+    -ms-transition: all .4s ;
+    -o-transition: all .4s ;
+}
+.android_section .apple_btn:hover{
+    color: white;
+    background: #5ba533 ;
+    box-shadow: 3px 3px 27px -3px #5ba533;
+}
+.android_section .android_btn{
+    padding: 14px 20px;
+    color: white;
+    background: #5ba533 ;
+    border: 1px solid #5ba533;
+    outline: none;
+    font-weight: 600;
+    box-shadow: 3px 3px 27px -3px #5ba533;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+.android_section .android_btn:hover{
+    background: black;
+    color: white;
+    box-shadow: inherit;
+}
+
+.android_img {
+	width: 600px;
+	margin: auto;
+	margin-top: 50px;
+}
+.android_img img{
+    max-width: 100%;
+}
+
+
+/* footer */
+footer p {
+	font-size: 20px;
+	margin-bottom: 0;
+}
+footer a {
+	color: #767676 !important;
+	text-decoration: none;
+}
